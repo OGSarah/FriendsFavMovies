@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="" width="300" style="border: 3px solid white; border-radius: 15px; vertical-align: middle; margin-right: 20px;">
+  <img src="https://github.com/OGSarah/FriendsFavMovies/blob/9ffe6bd6bbf3d904f6a2386036a6ad734401ee7d/AppIcon_Screenshot.png" width="300" style="border: 3px solid white; border-radius: 15px; vertical-align: middle; margin-right: 20px;">
   <h1 style="display: inline-block; vertical-align: middle;">FriendsFavMovies</h1>
 </div>
 
