@@ -1,0 +1,65 @@
+{
+  "fill" : {
+    "linear-gradient" : [
+      "srgb:0.55634,0.97935,0.00000,1.00000",
+      "srgb:0.30840,0.56182,0.00000,1.00000"
+    ]
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "image-name" : "movieclapper.png",
+          "name" : "movieclapper",
+          "position" : {
+            "scale" : 3,
+            "translation-in-points" : [
+              -17.015625,
+              43.125
+            ]
+          }
+        }
+      ],
+      "name" : "Group",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "blend-mode" : "lighten",
+      "blur-material" : null,
+      "layers" : [
+        {
+          "image-name" : "hand.thumbsup.fill.png",
+          "name" : "hand.thumbsup.fill",
+          "position" : {
+            "scale" : 1.5,
+            "translation-in-points" : [
+              -44.484375,
+              153.546875
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
