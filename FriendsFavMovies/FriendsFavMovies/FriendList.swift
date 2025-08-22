@@ -18,22 +18,18 @@ struct FriendList: View {
                 Text(friend.name)
             }
         }
-        .task {
-            context.insert(Friend(name: "Rachel"))
-            context.insert(Friend(name: "Orko"))
-        }
     }
 }
 
 // MARK: Previews
 #Preview("Dark Mode") {
     FriendList()
-        .modelContainer(for: Friend.self, inMemory: true)
+        .modelContainer(SampleData.shared.modelContainer)
         .preferredColorScheme(.dark)
 }
 
 #Preview("Light Mode") {
     FriendList()
-        .modelContainer(for: Friend.self, inMemory: true)
+        .modelContainer(SampleData.shared.modelContainer)
         .preferredColorScheme(.light)
 }

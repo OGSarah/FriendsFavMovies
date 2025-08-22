@@ -25,12 +25,12 @@ struct ContentView: View {
 // MARK: - Previews
 #Preview("Dark Mode") {
     ContentView()
-        .modelContainer(for: Friend.self, inMemory: true)
+        .modelContainer(SampleData.shared.modelContainer)
         .preferredColorScheme(.dark)
 }
 
 #Preview("Light Mode") {
     ContentView()
-        .modelContainer(for: Friend.self, inMemory: true)
+        .modelContainer(SampleData.shared.modelContainer)
         .preferredColorScheme(.light)
 }

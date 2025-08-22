@@ -16,4 +16,12 @@ class Friend {
         self.name = name
     }
 
+    @MainActor static let sampleData = [
+        Friend(name: "Rachel"),
+        Friend(name: "Eric"),
+        Friend(name: "Kate"),
+        Friend(name: "Molly"),
+        Friend(name: "Orko")
+    ]
+
 }
