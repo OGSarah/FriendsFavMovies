@@ -5,27 +5,32 @@
 //  Created by Sarah Clark on 8/21/25.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Tab("Friends", systemImage: "person.and.person") {
+                FriendList()
+            }
+            Tab("Movies", systemImage: "movieclapper.fill") {
+                Text("Movies")
+            }
         }
-        .padding()
     }
 }
 
 // MARK: - Previews
 #Preview("Dark Mode") {
     ContentView()
+        .modelContainer(for: Friend.self, inMemory: true)
         .preferredColorScheme(.dark)
 }
 
 #Preview("Light Mode") {
     ContentView()
+        .modelContainer(for: Friend.self, inMemory: true)
         .preferredColorScheme(.light)
 }
