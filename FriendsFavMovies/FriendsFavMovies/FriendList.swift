@@ -13,12 +13,24 @@ struct FriendList: View {
     @Environment(\.modelContext) private var context
 
     var body: some View {
-        List {
-            ForEach(friends) { friend in
-                Text(friend.name)
+        NavigationSplitView {
+            List {
+                ForEach(friends) { friend in
+                    NavigationLink(friend.name) {
+                        Text("Detail view for \(friend.name)")
+                        .navigationBarTitleDisplayMode(.inline)
+                    }
+                }
             }
+            .navigationTitle("Friends")
+        } detail: {
+            Text("Select a friend")
+                .navigationTitle("Friend")
+                .navigationBarTitleDisplayMode(.inline)
         }
+
     }
+
 }
 
 // MARK: Previews
