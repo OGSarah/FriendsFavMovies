@@ -16,7 +16,7 @@ struct ContentView: View {
                 FriendList()
             }
             Tab("Movies", systemImage: "movieclapper.fill") {
-                Text("Movies")
+                MovieList()
             }
         }
     }
